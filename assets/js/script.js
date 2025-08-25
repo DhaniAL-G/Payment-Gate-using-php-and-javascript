@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Format input kartu kredit
+    // Format input credit card
     const cardNumber = document.getElementById('cardNumber');
     if (cardNumber) {
         cardNumber.addEventListener('input', function(e) {
