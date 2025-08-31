@@ -6,7 +6,7 @@ require_once __DIR__ . '/../includes/db.php';
 $input = file_get_contents('php://input');
 $data = json_decode($input, true);
 
-// Validasi signature/callback (contoh sederhana)
+// Validasi signature/callback (contoh simpel)
 if (empty($data['order_id']) || empty($data['status']) || empty($data['signature'])) {
     http_response_code(400);
     echo json_encode(['error' => 'Invalid callback data']);
