@@ -7,6 +7,7 @@ if (!isset($_GET['order_id'])) {
     exit;
 }
 
+//order line
 $orderId = $_GET['order_id'];
 $stmt = $db->prepare("SELECT * FROM transactions WHERE order_id = ?");
 $stmt->execute([$orderId]);
