@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         paymentForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Ambil data form
+            // Ambil data form!
             const formData = {
                 amount: document.getElementById('amount').value,
                 payment_method: document.getElementById('paymentMethod').value,
