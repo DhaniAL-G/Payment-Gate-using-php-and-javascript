@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $stmt->execute([$data['status'], $data['order_id']]);
         
-        // Jika berhasil, kirim notifikasi
+        // Jika berhasil, mengirim notifikasi
         if ($data['status'] === 'success') {
             sendPaymentNotification($data['order_id']);
         }
